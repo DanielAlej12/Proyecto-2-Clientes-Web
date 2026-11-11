@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GastroBitácora — Laboratorio de Exploración Culinaria</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="contenedor-navegacion" class="cabecera-principal"></header>
+
+  <div id="contenedor-notificaciones" class="zona-notificaciones" aria-live="polite"></div>
+  <div id="contenedor-modal" class="zona-modal"></div>
+
+  <main id="contenedor-vista" class="contenedor-principal" tabindex="-1"></main>
+
+  <footer class="pie-pagina">
+    <p>GastroBitácora &mdash; Desarrollado con Vanilla JS y TheMealDB API</p>
+  </footer>
+
+  <!-- Servicios -->
+  <script src="js/servicios/cache.js"></script>
+  <script src="js/servicios/api.js"></script>
+  <script src="js/servicios/recetas.js"></script>
+  <script src="js/servicios/comparacion.js"></script>
+
+  <!-- Pseudocomponentes -->
+  <script src="js/componentes/EstadoCarga.js"></script>
+  <script src="js/componentes/BarraNavegacion.js"></script>
+  <script src="js/componentes/TarjetaReceta.js"></script>
+  <script src="js/componentes/Paginador.js"></script>
+  <script src="js/componentes/FormularioBusqueda.js"></script>
+  <script src="js/componentes/ListaIngredientes.js"></script>
+  <script src="js/componentes/PasosPreparacion.js"></script>
+  <script src="js/componentes/PanelComparador.js"></script>
+  <script src="js/componentes/TablaComparacion.js"></script>
+
+  <!-- Vistas -->
+  <script src="js/vistas/VistaInicio.js"></script>
+  <script src="js/vistas/VistaExplorar.js"></script>
+  <script src="js/vistas/VistaDetalle.js"></script>
+  <script src="js/vistas/VistaCategoriasOrigenes.js"></script>
+  <script src="js/vistas/VistaComparador.js"></script>
+
+  <!-- Punto de entrada -->
+  <script src="js/app.js"></script>
+</body>
+</html>
